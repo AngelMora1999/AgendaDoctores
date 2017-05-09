@@ -32,6 +32,20 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+#Mis gemas
+#Autentificacion de usuarios
+gem 'devise', github:'plataformatec/devise'
+#Annotate para recordar los campos en las tablas de los modelos
+gem 'annotate'
+#Hacer slug a los modelos
+gem 'friendly_id', '~> 5.1.0'
+#Maquinas de estados AASM
+gem 'aasm', '~> 4.11', '>= 4.11.1'
+#PaperClip para subir imagenes
+gem "paperclip", "~> 5.0.0"
+#BestInPlace para editar remotamente los inputs
+gem 'best_in_place', '~> 3.0.1'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
