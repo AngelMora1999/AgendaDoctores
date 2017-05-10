@@ -31,12 +31,25 @@ class DeviseCreateUsers < ActiveRecord::Migration[5.0]
       # t.datetime :locked_at
 
       #Mis campos y datos
-      #Generales
+      t.attachment :avatar
+      t.string :identification_card
+      t.string :abbreviaton
+      t.string :first_name
+      t.string :second_name
+      t.string :surname
+      t.string :second_surname
+      t.datetime :birth_date
+      t.datetime :doctor_since
+      t.text :bio
+      t.string :state
+      t.string :city
+      t.string :address
+      t.string :phone
+      t.string :cell_phone
+      t.integer :visit_count
+      t.string :status
+      t.string :notion
       t.integer :permission_level, default: 1
-
-      #Pacientes
-
-      #Doctores
 
       t.timestamps null: false
     end
